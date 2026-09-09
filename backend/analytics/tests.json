@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Запись визита",
+      "method": "POST",
+      "path": "/",
+      "body": {"path": "/", "section": "Главная", "device": "desktop"},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Статистика без пароля запрещена",
+      "method": "GET",
+      "path": "/?action=stats",
+      "expectedStatus": 401
+    }
+  ]
+}
