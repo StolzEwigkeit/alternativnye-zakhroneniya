@@ -172,6 +172,21 @@ const Stats = () => {
           </Card>
         </div>
 
+        <div className="mt-12 flex flex-wrap items-center gap-5 border-t border-rule pt-8">
+          <a
+            href="/wordpress-import.xml"
+            download
+            className="inline-flex items-center gap-2 border border-primary px-5 py-3 text-[0.88em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+          >
+            <Icon name="Download" size={16} />
+            Скачать файл для переноса в WordPress
+          </a>
+          <span className="max-w-[34ch] text-[0.78em] leading-relaxed text-folio">
+            Файл импорта со всеми разделами и статьями: в WordPress откройте «Инструменты →
+            Импорт → WordPress» и загрузите его.
+          </span>
+        </div>
+
         <p className="mt-10 text-[0.8em] italic text-folio">
           Мы не собираем персональные данные посетителей и не передаём их третьим лицам: считаем
           только обезличенные визиты.
